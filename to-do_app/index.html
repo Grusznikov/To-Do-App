@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+</head>
+<body>
+    <!-- <div id="swap-color">
+    </div> -->
+
+    <div id="container">
+        <div id="container_top-bar">
+            <div id="container_top-bar__icons">    
+                <i class="fas fa-window-minimize tablink"></i>    
+                <i class="fas fa-times-circle tablink"></i>
+            </div>
+        </div>
+        <div id="left_bar">
+            <ol id="left_bar_options">
+                <li id="left-bar_options--work"><a href="#work"></a><i class="fas fa-list-ol"></i></li>
+                <li id="left-bar_options--done"><a href="#done"></a><i class="fas fa-tasks"></i></li>
+                <li id="left-bar_options--settings"><a href="#settings"></a><i class="fas fa-cog"></i></li>
+            </ol>
+        </div>
+        <div id="home">
+        <div id="main_work">
+            <div id="main_work-addTasks">
+                <input type="text" id="main_work-typeTasks">
+                <input type="button" value="Dodaj" id="main_work-submitTask">
+            </div>
+        </div>
+        <div id="main_work-tasks">
+            <ol></ol>
+            </div>
+    </div>
+    <div id="done"></div>
+    <div id="settings"></div>
+    <script src="main.js"></script>
+</body>
+</html>

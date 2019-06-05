@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body
+{
+    background-image: linear-gradient(to right top, #070d16, #262747, #5f3972, #a9428c, #f7478d);
+    height:100vh;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.fas{
+    color:#f7478d;
+    padding:0px 5px;
+    transition: .6s;
+}
+
+.fas:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+ol{
+    list-style-type: none;
+}
+
+#container{
+    width:80vw;
+    height:80vh;
+    min-height: 400px;
+    min-width: 400px;
+    background-color: white;
+    position: absolute;
+    left:50%;
+    border-radius: 2%;
+    box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+    top:50%;
+    overflow-x: hidden;
+    transform:translate(-50%, -50%);
+}
+
+#container_top-bar{
+    width:100%;
+    height:25px;
+    /* transition: .6s; */
+    display: flex;
+    justify-content: flex-end;
+    background-color:black;
+}
+/* #container_top-bar:hover{
+    background-color:black;
+} */
+#container_top-bar__icons{
+    color: white;
+    width:20vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5px;
+}
+
+#left_bar{
+    width:10%;
+    min-height:calc(100% - 25px);
+    display:flex;
+    border-radius: 3px;
+    background-color:#f7478d;
+}
+
+#left_bar .fas{
+color:white;
+}
+
+#left_bar_options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+    width:100%;
+    color:white;
+    /* text-transform: uppercase; */
+}
+
+.fa-cog:hover{
+    animation: rotate_cog .8s;
+}
+
+@keyframes rotate_cog {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+#main_work{
+    position: absolute;
+    width: 90%;
+    top:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:10%;
+    height:30%;
+}
+#main_work-typeTasks{
+    border:none;
+    border-bottom:3px solid #f7478d;
+    background: #f7478d1a;
+    border-radius: 5%;
+    outline:none;
+    padding:10px 15px;
+    text-align: center;
+}
+
+#main_work-submitTask{
+    /* border-radius: 30%; */
+    display: block;
+    margin:auto;
+    margin-top:10px;
+    background: #f7478d;
+    padding:5px 20px;
+    color:white;
+}
+
+#main_work-tasks{
+    position: absolute;
+    top:calc(30% + 25px);
+    left:10%;
+    display: flex;
+    width:90%;
+    font-size:1.3em;
+    height:calc(70% - 25px);
+    background:lightgrey;
+    padding:20px 20px;
+}
+
+#main_works-tasks ol{
+    margin:auto;
+}
