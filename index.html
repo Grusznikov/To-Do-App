@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>To-Do App</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
-</head>
-
-<body>
-    <!-- <div id="swap-color">
-    </div> -->
-
-    <div id="container">
-        <div id="container_top-bar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="description">
+        <h1>WORK TO-DOS</h1>
+        <ul>
+          <li>Enter text into the input field to add items to your list.</li>
+          <!-- -->
+          <li>Click the "X" to remove the item from your list.</li>
+          <li>Click the item to mark it as complete.</li>
+        </ul>
+        <input type="text" name="new-item" id="text" placeholder=" New item" />
+        <input type="button" value="Add" name="add-item" />
+        <div class="item-list">
+          <ul></ul>
         </div>
-        <div id="left_bar">
-            <ol id="left_bar_options">
-                <li id="left-bar_options--work"><i class="fas fa-list-ol"></i></li>
-            </ol>
-        </div>
-        <div id="home">
-            <div class="main_work">
-                <div id="main_work-addTasks">
-                    <input type="text" id="main_work-typeTasks">
-                    <input type="button" value="Dodaj" id="main_work-submitTask">
-                </div>
-            </div>
-            <div class="main_work-tasks">
-                <ol></ol>
-            </div>
-        </div>
-        <script src="main.js"></script>
-</body>
-
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>

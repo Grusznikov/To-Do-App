@@ -1,0 +1,13 @@
+$main-background: #1b759e
+
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+
+body
+    background-color: $main-background
+
+    .container
+        @include center
